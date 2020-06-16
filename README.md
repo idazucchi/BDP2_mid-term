@@ -9,7 +9,7 @@ The aim is to extend the jupyter notebook docker to include matplotlib so that I
 
 So far:
   - extended the jupyter notebook container to include matplotlib
-  - 
-manager 172.31.85.92
-vm2     172.31.84.92
-vm1     172.31.90.78
+  - run the image built by dockerHub locally with bind mount to persist data
+  docker run -p 8888:8888 -v /home/ubuntu/BDP2_mid-term/work:/home/jovyan/work idazucchi/bdp2_midterm:latest
+  - script to produce the graphs
+
