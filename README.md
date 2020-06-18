@@ -12,4 +12,4 @@ So far:
   - run the image built by dockerHub locally with bind mount to persist data \
     docker run -p 8888:8888 -v /home/ubuntu/BDP2_mid-term/work:/home/jovyan/work idazucchi/bdp2_midterm:latest
   - script to produce the graphs
-
+  - created application stack

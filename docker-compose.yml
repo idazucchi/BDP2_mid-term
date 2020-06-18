@@ -1,0 +1,21 @@
+version: '3'
+services:
+  jupyter_server:
+    image: idazucchi/bdp2_midterm
+    ports:
+      - 8888:8888
+    volumes:
+      - /home/ubuntu/BDP2_mid-term/work:/home/jovyan/work
+  portainer:
+    image: portainer/portainer
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    deploy:
+      restart_policy:
+        condition: any
+    container_name: grafical
+volumes:
+  portainer_data:
