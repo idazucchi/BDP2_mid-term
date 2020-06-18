@@ -2,6 +2,8 @@ version: '3'
 services:
   jupyter_server:
     image: idazucchi/bdp2_midterm
+    environment:
+      - GEN_CERT=yes
     ports:
       - 8888:8888
     volumes:
