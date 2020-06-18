@@ -13,3 +13,4 @@ So far:
     docker run -p 8888:8888 -v /home/ubuntu/BDP2_mid-term/work:/home/jovyan/work idazucchi/bdp2_midterm:latest
   - script to produce the graphs
   - created application stack
+  - jupyter can be accessed through https
